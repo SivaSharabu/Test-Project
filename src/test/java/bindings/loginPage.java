@@ -21,7 +21,7 @@ public class loginPage extends baseclass{
        lp = new loginPageobjects(driver);
     }
 
-    @Test
+    @Test(priority = 0)
     public void enterAUsername(){
 
         lp.enterUsername();
@@ -29,14 +29,14 @@ public class loginPage extends baseclass{
         //driver.findElement(By.id("Email")).sendKeys("admin@yourstore.com");
     }
 
-    @Test
+    @Test(priority = 1)
     public void enterBPassword(){
         lp.enterPassword();
         //driver.findElement(By.id("Password")).clear();
         //driver.findElement(By.id("Password")).sendKeys("admin");
     }
 
-    @Test
+    @Test(priority = 2)
     public void clickCLogin(){
        db = lp.submitCredentials();
        //driver.findElement(By.xpath("//input[@value='Log in']")).click();
