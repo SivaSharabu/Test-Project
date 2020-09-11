@@ -43,8 +43,14 @@ public class loginPage extends baseclass{
 
        System.out.println(driver.getTitle());
     }
-    @Test
+    @Test(priority = 3)
     public void successfulLogin(){
+
         Assert.assertEquals(driver.getTitle(), "Dashboard / nopCommerce administration");
+    }
+
+    @Test (priority = 4)  this method should be in dashboardPage.java ???
+    public void clickparentCust(){
+        db.
     }
 }

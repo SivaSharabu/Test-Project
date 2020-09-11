@@ -28,10 +28,12 @@ public class loginPageobjects {
     private WebElement btnSubmit;
 
     public void enterUsername(){
+        username.clear();
         username.sendKeys("admin@yourstore.com");
     }
 
     public void enterPassword(){
+        password.clear();
         password.sendKeys("admin");
     }
 
